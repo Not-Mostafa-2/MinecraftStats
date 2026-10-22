@@ -29,11 +29,11 @@ public class FileSystemDataSource implements DataSource {
 
     @Override
     public Path getPlayerStatsPath() {
-        return serverPath.resolve(worldName).resolve(STATS_PATH_NAME);
+        return serverPath.resolve(worldName).resolve("players").resolve(STATS_PATH_NAME);
     }
 
     @Override
     public Path getPlayerAdvancementsPath() {
-        return serverPath.resolve(worldName).resolve(ADVANCEMENTS_PATH_NAME);
+        return serverPath.resolve(worldName).resolve("players").resolve(ADVANCEMENTS_PATH_NAME);
     }
 }
